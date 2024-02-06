@@ -79,4 +79,4 @@ df_unp_racer = df_single_racer.unstack().rename_axis(['category','row number']).
 st.bar_chart(df_unp_racer,x='category',y='strength')
 
 if st.checkbox('Show All Racers'):
-    st.barchart(df_racer, x='Character', y=['Speed','Acceleration','Weight','Handling','Traction/Grip','Mini-Turbo'])
+    st.bar_chart(df_racer, x='Character', y=['Speed','Acceleration','Weight','Handling','Traction/Grip','Mini-Turbo'])
